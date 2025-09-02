@@ -6,33 +6,28 @@ By Michael Olaniyi Jeremiah
 
 - **Brief Introduction**
 
-The covid-19 Pandemic was one of a kind that took many lives. I embarked on a journey to get insights on Covid's impact on the World. 
+ The COVID-19 pandemic reshaped lives across the globe. I embarked on a data-driven journey to uncover insights into its global impact. 
 
 
 
 - **The Dataset:**
 
-The analysis conducted on the COVID-19 pandemic using the World Health Organization (WHO) dataset focuses on critical metrics such as total cases, death counts, infection rates, vaccination rollouts, and the virus's impact across different continents.
+ Using WHO data, I analyzed the COVID-19 pandemic by exploring cases, deaths, infection trends, vaccination rollouts, and how the virus affected different continents.
+
+ **Key Questions Explored in This Analysis:**
+
+* What percentage of the global population has been vaccinated?
+* How do COVID-19 death counts vary across continents?
+* Which continent recorded the highest death rate relative to population?
+* Which countries had the highest infection rates compared to population?
+* What are the total reported cases and the percentage of the population infected worldwide?
+* How do total cases compare to total deaths in Nigeria?
 
 
-**The following questions are what this analysis seeks to answer:**
-- What is the Percentage of Population Vaccinated
-- What is the number of Deaths By Continent
-- Which is the Continents with the highest death count per population
-- Which is Countries with Highest Infection Rate Compared to Population
-- What is the Total cases & population percentage infected
-- What is the Total Cases vs Total Deaths in Nigeria
-
-
-
-
-
-- **Datasets Description:**
+**Datasets Description:**
 Covid-19 Deaths table 'CovidDeaths'  has 26 columns and 81,060 rows
 
 ![image](https://github.com/user-attachments/assets/9a3595c1-af27-4e64-a31c-1ec771ec2521).
-
-
 
 
 **CovidDeaths table head output:**
@@ -40,9 +35,7 @@ Covid-19 Deaths table 'CovidDeaths'  has 26 columns and 81,060 rows
 ![image](https://github.com/user-attachments/assets/41a25d43-6a74-40c7-aa8e-907deeafbb79)
 
 
-
-
-Covid-19 Vaccinations table 'CovidVaccinations' has 37 columns and 85,171 rows
+**Covid-19 Vaccinations table 'CovidVaccinations' has 37 columns and 85,171 rows:**
 
 ![image](https://github.com/user-attachments/assets/f7455feb-625d-4f0b-8a18-3b609017164d).
 
@@ -90,12 +83,11 @@ Output:
 ![image](https://github.com/user-attachments/assets/5a7847ec-4433-4569-9ff7-34d5c328d962)
 
 ## Total Cases vs. Total Deaths in Nigeria
-- The initial reported Covid-19 death in Nigeria occurred on 23rd March 2020 when there were 40 confirmed cases. By 30th April 2021, Nigeria had a total of 165,110 confirmed cases and 2,063 deaths, giving a death rate of approximately 1.25%. This indicates that out of every 100 people infected with Covid-19 in Nigeria, roughly 1.25 succumbed to the virus.
+* The first reported COVID-19 death in Nigeria occurred on 23rd March 2020, when there were just 40 confirmed cases. By 30th April 2021, the country had recorded 165,110 confirmed cases and 2,063 deaths, giving    a death rate of approximately 1.25%—meaning that out of every 100 infected people, about 1.25 did not survive.
 
-- Findings: Nigeria had a relatively lower death rate compared to the global average, which hovered around 2%. This lower death rate could be attributed to several factors including a younger population or less severe strains of the virus during this period.
+* Findings: Nigeria’s death rate (~1.25%) was lower than the global average (~2%), which may be attributed to factors such as a younger population or the presence of less severe virus strains during this period.
 
-
- ## Total Cases vs Population
+## Total Cases vs Population
 ```SQL
 -- Shows what percentage of population infected with Covid
 
@@ -110,10 +102,9 @@ Output:
 
 **Total Cases vs. Population: Percentage of Population Infected**
 
-- Query Analysis: This query shows the percentage of the population that was infected with Covid-19 in different countries. Countries like Andorra reported an infection rate of 17% of their population. In Nigeria, however, by 30th April 2021, 0.08% of the population was infected (based on Nigeria's population of approximately 206 million).
+* **Query Analysis:** This query highlights the percentage of each country’s population infected with COVID-19. For example, **Andorra reported an infection rate of ~17%**, while in **Nigeria**, as of **30th       April 2021**, only **0.08% of the population** (based on ~206 million people) had been reported as infected.
 
-- Findings: Nigeria's infection rate as a percentage of the total population was significantly lower compared to many other countries, particularly in Europe. This may indicate under-reporting of cases or limited testing capacity.
-
+* **Findings:** Nigeria’s infection rate was **much lower than in many countries, especially across Europe**. This gap may point to **under-reporting of cases** or **limited testing capacity** during the period    analyzed.
 
 
 **Countries with Highest Infection Rate compared to Population**
@@ -132,10 +123,9 @@ ORDER BY PercentPopulationInfected DESC
 
 ## Countries with Highest Infection Rate Compared to Population
 
-- The highest infection rates relative to population occurred in countries with smaller populations. Andorra had the highest infection rate, where more than 17% of the population contracted Covid-19. This demonstrates the disproportionate impact the virus had on smaller, densely populated countries.
+* **Query Analysis:** The highest infection rates relative to population were recorded in smaller countries. Andorra, for instance, saw over **17% of its population** infected with COVID-19, highlighting the disproportionate impact on smaller, densely populated nations.
 
-- Findings: Smaller nations, particularly in Europe, were hit hard by the pandemic, as they faced significant infection rates, unlike larger countries such as Nigeria.
-
+* **Findings:** Smaller European countries were among the hardest hit, experiencing significantly higher infection rates compared to larger nations like Nigeria.
 
 ## Countries with Highest Death Count per Population
 ```SQL
@@ -154,10 +144,9 @@ Output:
 
 ## Countries with Highest Death Count per Population
 
-- The United States recorded the highest total number of Covid-19 deaths, reflecting both its large population and the significant spread of the virus within its borders.
+* Query Analysis: The United States recorded the highest total number of COVID-19 deaths, a reflection of both its large population and the widespread transmission of the virus.
 
-- Findings: Although the US had a relatively advanced healthcare system, the sheer volume of cases overwhelmed the system, leading to a high number of fatalities.
-
+* Findings: Despite having a relatively advanced healthcare system, the sheer scale of infections overwhelmed resources, resulting in a significantly high number of fatalities.
 
 ## Breaking it down by Continent
 ```SQL
@@ -175,10 +164,9 @@ Output:
 
 ## Continents with the Highest Death Count per Population
 
-- North America had the highest death count, with 576,232 deaths, followed by South America with 403,783 deaths. This shows the severe impact Covid-19 had on these continents, especially in densely populated areas.
+* Query Analysis: **North America** recorded the highest death toll with **576,232** deaths, followed by **South America with 403,783** deaths—underscoring the severe impact of COVID-19 on these regions,           particularly in densely populated areas.
 
-- Findings: North and South America had the highest death tolls, largely due to delayed containment measures, overwhelmed healthcare systems, and perhaps differences in population health and preparedness.
-
+* Findings: The high death counts in North and South America were likely driven by delayed containment measures, strained healthcare systems, and variations in population health and preparedness.
 
 ## Global Covid-19 Numbers
 
@@ -198,11 +186,9 @@ Output:
 
 ## Global Covid-19 Numbers: Death Percentage
 
-- The global death rate was calculated as 2.11%, indicating that globally, about 2 in every 100 people who contracted Covid-19 succumbed to the virus. This reflects the overall impact of the pandemic.
+* Query Analysis: The global death rate was calculated at **2.11%**, meaning that on average, **2 out of every 100 people** infected with COVID-19 died—a stark reflection of the pandemic’s worldwide impact.
 
-- Findings: The global death rate provides a stark reminder of the severity of the pandemic. However, regional differences in healthcare capacity, early interventions, and government actions led to significant variations in death rates across continents.
-
-
+* Findings: While this global figure highlights the severity of the crisis, regional differences in healthcare capacity, government interventions, and early response measures led to wide variations in death rates across continents.
 
 ## Total Population vs Vaccinations
 ```SQL
@@ -227,10 +213,9 @@ Output:
 
 ## Vaccination Rollout: Population vs. Vaccination Rates
 
-- A comparison between total population and vaccination data shows the percentage of the population that had received at least one vaccine dose. In several countries, the percentage of people vaccinated increased over time. Countries that vaccinated early and aggressively, such as the United States and European nations, saw a slower rise in new cases as vaccines helped control the spread of the virus.
+* Query Analysis: Comparing total population against vaccination data reveals the share of people who had received at least one dose. In many countries, vaccination coverage steadily increased over time. Nations   that rolled out vaccines early and aggressively—such as the United States and several European countries—experienced a slower rise in new cases as vaccines curbed the virus’s spread.
 
-- Findings: Vaccination rollout played a critical role in slowing down the spread of Covid-19. However, many developing nations, including Nigeria, lagged behind in terms of vaccination coverage, which may have prolonged their exposure to the virus.
-
+* Findings: Vaccination played a critical role in reducing transmission, but many developing countries, including Nigeria, lagged in coverage. This slower rollout may have prolonged vulnerability to the virus.
 
 
 ## Covid-19 Global Impact Analysis Dashboard on Tableau
@@ -243,60 +228,50 @@ Output:
 - Total Deaths: 3,180,206
 - Death Percentage: 2.11%
 
-The pandemic’s global reach has been devastating, with over 150 million total cases reported worldwide and more than 3 million deaths, resulting in a death percentage of 2.11%. The spread varied significantly across regions, with Europe, North America, and South America showing higher mortality rates compared to other continents.
-
-
+The COVID-19 pandemic had a devastating global reach, with over 150 million reported cases and more than 3 million deaths, resulting in a global death rate of 2.11%. The impact, however, varied widely across regions—Europe, North America, and South America recorded higher mortality rates compared to other continents.
 
 ## Percent Population Infected per Country
 
-The infection rates vary across countries, with some experiencing more significant impacts relative to their population size. The top countries with the highest infection rates include:
+Infection rates varied widely across countries, with some experiencing a much heavier burden relative to their population size. The countries with the highest infection rates were:
 
-- United States: 19.11%
-- United Kingdom: 14.93%
-- India: 8.33%
+* United States: 19.11%
+* United Kingdom: 14.93%
+* India: 8.33%
 
-These numbers indicate that nearly 1 in 5 individuals in these countries contracted the virus during the pandemic, revealing the heavy burden placed on their healthcare systems.
-
-
-
+These figures show that in some nations, nearly 1 in 5 people contracted the virus, placing immense pressure on their healthcare systems.
 
 ## Recommendations
 
 
+### Accelerating Vaccine Distribution in Developing Nations
 
-### Accelerate Vaccine Distribution in Developing Nations:
+* The data shows that countries with higher vaccination rates experienced slower infection growth and fewer deaths. For low- and middle-income nations like Nigeria, it is crucial to prioritize vaccine procurement and distribution to protect larger portions of the population. Achieving this will require international collaboration and strong support from organizations such as the WHO, ensuring equitable access to vaccines worldwide.
 
-- The data reveals that countries with higher vaccination rates saw a slowdown in infection rates and fewer deaths. It is imperative for governments, particularly in low- and middle-income countries like Nigeria, to prioritize securing and distributing vaccines to a larger portion of the population. International collaboration and support from organizations like the WHO will be critical to ensuring equitable vaccine access.
+### Improve Testing and Reporting Infrastructure
 
+* Infection rates in countries such as Nigeria point to possible under-reporting caused by limited testing capacity. Strengthening healthcare infrastructure—with greater investment in testing facilities, data reporting, and contact tracing systems—is essential for early detection and effective control of future pandemics.
 
+### Strengthen Public Health Education and Communication
 
-### Improve Testing and Reporting Infrastructure:
-- The infection rates in countries like Nigeria suggest potential under-reporting due to limited testing capacity. Investments in healthcare infrastructure, especially testing and contact tracing systems, will help in detecting future pandemics early and controlling their spread.
+* Countries that achieved lower COVID-19 mortality rates often had clear public health messaging and consistent guidelines. To replicate this success, governments should invest in educating communities on vaccination, social distancing, mask usage, and other preventive measures—with a particular focus on regions where vaccine hesitancy remains high.
 
-### Strengthen Public Health Education and Communication:
-- Many countries that fared better in terms of Covid-19 mortality rates had clear public health communication and guidelines. Governments should focus on educating the public on the importance of vaccinations, social distancing, mask-wearing, and other preventative measures, especially in regions where vaccine hesitancy is prevalent.
+### Enhance Pandemic Preparedness Plans
 
-### Enhance Pandemic Preparedness Plans:
-- Countries that experienced overwhelming death rates (e.g., the US, Brazil) struggled with preparedness. All nations should develop comprehensive pandemic response plans, including stockpiling medical supplies, ventilators, PPE, and expanding ICU capacities. Governments should also conduct regular pandemic simulation exercises to remain prepared for future outbreaks.
+* Countries with overwhelming death rates—such as the United States and Brazil—highlighted the consequences of limited preparedness. To avoid similar outcomes, all nations should establish comprehensive pandemic response plans, including stockpiling medical supplies, PPE, and ventilators, while also expanding ICU capacity. Regular simulation exercises and preparedness drills are essential to ensure readiness for future outbreaks.
 
-### Strengthen Global Health Collaboration:
-- The findings emphasize the need for global cooperation in managing pandemics. Countries must work together to share data, best practices, and resources during global health crises. International bodies like the WHO should be empowered to facilitate this collaboration, ensuring timely interventions across borders.
+### Strengthen Global Health Collaboration
 
+* The findings highlight the critical importance of international cooperation in pandemic management. Nations must work together to share data, resources, and best practices, while organizations like the WHO should be further empowered to coordinate timely interventions across borders.
 
-### Target Vulnerable Populations:
-- High-risk groups, including the elderly, immunocompromised individuals, and those with pre-existing conditions, must be prioritized for vaccination and healthcare during pandemics. Special programs should be developed to ensure these groups have easy access to medical care, vaccines, and social services.
+### Target Vulnerable Populations
 
+* High-risk groups—such as the elderly, immunocompromised individuals, and those with pre-existing conditions—should be prioritized during pandemics. Dedicated programs must ensure these populations have equitable access to vaccines, healthcare, and social support services.
 
-### Invest in Long-Term Healthcare Resilience:
-- Countries should increase investment in their healthcare systems to build resilience against future pandemics. This includes improving healthcare worker training, increasing healthcare funding, and creating scalable solutions for dealing with large-scale outbreaks.
+### Invest in Long-Term Healthcare Resilience
 
-
-
-By implementing these recommendations, countries will be better positioned to handle future pandemics, reduce fatalities, and minimize disruptions to global health systems. The Covid-19 pandemic has underscored the importance of proactive, unified, and well-prepared responses to global health threats.
+* To prepare for future outbreaks, countries need to strengthen their healthcare systems through greater investment in funding, workforce training, and scalable infrastructure. Building resilience today ensures healthcare systems can withstand the pressure of large-scale pandemics tomorrow.
 
 
+* By adopting these recommendations, countries can be better equipped to manage future pandemics, reduce loss of life, and minimize disruptions to global health systems. The COVID-19 crisis has underscored the urgent need for proactive, unified, and well-prepared responses to global health challenges.
 
-Thank you for reading. 
-Kindly contact me for any discussion on projects or job offers on: 
-Email: michaeljeremiah124@gmail.com
-Phone: 2347066644028
+
