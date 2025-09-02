@@ -272,6 +272,6 @@ These figures show that in some nations, nearly 1 in 5 people contracted the vir
 * To prepare for future outbreaks, countries need to strengthen their healthcare systems through greater investment in funding, workforce training, and scalable infrastructure. Building resilience today ensures healthcare systems can withstand the pressure of large-scale pandemics tomorrow.
 
 
-* By adopting these recommendations, countries can be better equipped to manage future pandemics, reduce loss of life, and minimize disruptions to global health systems. The COVID-19 crisis has underscored the urgent need for proactive, unified, and well-prepared responses to global health challenges.
+By adopting these recommendations, countries can be better equipped to manage future pandemics, reduce loss of life, and minimize disruptions to global health systems. The COVID-19 crisis has underscored the urgent need for proactive, unified, and well-prepared responses to global health challenges.
 
 
